@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUs">
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/seekdiscomfort"
+        />
+
+    <TextView
+        android:id="@+id/text_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seek Discomfort was launched in May
+2018 by the founders of the YouTube Channel Yes Theory. For years,
+ the yes theory guys used the phrase seek discomfort to push themselves.
+It was a constant reminder that the only way to grow was to do things that made them uncomfortable.
+Ultimately, we hope that out clothing can inspire the world to live the seek discomfort philosophy."
+        android:layout_below="@+id/logo_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/website_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Website"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/text_details"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+</RelativeLayout>

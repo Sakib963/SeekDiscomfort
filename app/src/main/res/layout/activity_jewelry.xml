@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeekersEssential">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50px"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/proceed_button"
+        app:layout_constraintEnd_toEndOf="@+id/proceed_button"
+        app:srcCompat="@drawable/carticon" />
+
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Proceed"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttons"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+    </Button>
+
+    <ScrollView
+        android:id="@+id/scrollview_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/product_image_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/seek2"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/product_name_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Seek Discomfort Ring"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/product_one_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: 1200 Taka"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/product_one_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A limited-edition jewelry piece from Seek Discomfort, with a daily reminder to always choose discomfort."
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <RelativeLayout
+                android:id="@+id/product_one_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/minus_prod_one"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:text="-"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/prod_one_quantity_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/minus_prod_one"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_design"/>
+
+                <Button
+                    android:id="@+id/prod_one_cart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttons"
+                    android:text="Add to Cart"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/plus_prod_one"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/prod_one_quantity_text"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:background="@drawable/buttons"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/product_image_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/seek4"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/product_name_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rope Bracelet - Silver Bolt"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/product_price_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: 500 Taka"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/product_two_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When we started Seek Discomfort, the lightning bolt quickly became a representation of the movement. It’s the spark that ignites when you dare to step outside your comfort zone. A sudden jolt of excitement within you when you move through fear. A flash of clarity when you realize that life is limitless."
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <RelativeLayout
+                android:id="@+id/product_two_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/minus_prod_two"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:text="-"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/prod_two_quantity_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/minus_prod_two"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_design"/>
+
+                <Button
+                    android:id="@+id/prod_two_cart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttons"
+                    android:text="Add to Cart"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/plus_prod_two"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/prod_two_quantity_text"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:background="@drawable/buttons"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/product_image_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/seek6"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/product_name_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Extra Necklace Chain"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/product_price_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: 700 Taka"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/product_three_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A limited-edition jewelry piece from Seek Discomfort, with a daily reminder to always choose discomfort. Wear this chain by itself, or use it to replace the chain from a Pendant Necklace."
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <RelativeLayout
+                android:id="@+id/product_three_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/minus_prod_three"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:text="-"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/prod_three_quantity_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/minus_prod_three"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_design"/>
+
+                <Button
+                    android:id="@+id/prod_three_cart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttons"
+                    android:text="Add to Cart"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/plus_prod_three"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/prod_three_quantity_text"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:background="@drawable/buttons"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/product_image_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/seek9"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/product_name_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Love Over Fear Ring"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/product_price_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: 1000 Taka"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/product_four_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A limited-edition jewelry piece from Seek Discomfort, with a daily reminder to always choose love over fear."
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <RelativeLayout
+                android:id="@+id/product_four_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/minus_prod_four"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:text="-"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/prod_four_quantity_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/minus_prod_four"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_design"/>
+
+                <Button
+                    android:id="@+id/prod_four_cart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttons"
+                    android:text="Add to Cart"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/plus_prod_four"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/prod_four_quantity_text"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:background="@drawable/buttons"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/product_image_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/seek12"
+                android:clickable="true"/>
+
+            <TextView
+                android:id="@+id/product_name_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Mantra Necklace"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/product_price_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price: 900 Taka"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/product_five_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="These two mantras, Seek Discomfort and Love Over Fear, can inspire every day actions. Choosing love over fear and seeking discomfort are at the core of what we do as Seekers. Wear these as a daily reminder of the philosophy."
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+            <RelativeLayout
+                android:id="@+id/product_five_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/minus_prod_five"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:text="-"
+                    android:textSize="22sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/prod_five_quantity_text"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/minus_prod_five"
+                    android:text="0"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:background="@drawable/input_design"/>
+
+                <Button
+                    android:id="@+id/prod_five_cart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttons"
+                    android:text="Add to Cart"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/plus_prod_five"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/prod_five_quantity_text"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:background="@drawable/buttons"/>
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="80dp"></ImageView>
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

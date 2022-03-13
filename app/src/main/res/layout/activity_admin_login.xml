@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin"
+    android:background="@drawable/adminlogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADMIN LOGIN PANEL"
+        android:textColor="#FB0D0D"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textStyle="bold"></TextView>
+
+
+    <EditText
+        android:id="@+id/admin_email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Admin Email"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"></EditText>
+
+    <EditText
+        android:id="@+id/admin_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:padding="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:inputType="textPassword"
+        android:layout_below="@+id/admin_email_field"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/white"></EditText>
+
+    <Button
+        android:id="@+id/admin_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/admin_password_field"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:padding="5dp"></Button>
+
+</RelativeLayout>

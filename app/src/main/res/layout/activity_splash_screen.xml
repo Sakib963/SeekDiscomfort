@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@drawable/cover">
+
+    <TextView
+        android:id="@+id/center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""></TextView>
+
+    <TextView
+        android:id="@+id/tagline_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="More Than A Clothing Company"
+        android:textSize="30sp"
+        android:textAlignment="center"></TextView>
+
+    <TextView
+        android:id="@+id/textfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagline_text"
+        android:textColor="@color/white"
+        android:text="Our goal is to be a daily reminder that the best
+things in life exists outside your comfort zone."
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"></TextView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_one"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/getstart_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buttons"
+            android:padding="15dp"
+            android:text="Get Start"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"></Button>
+
+    </LinearLayout>
+
+</RelativeLayout>
