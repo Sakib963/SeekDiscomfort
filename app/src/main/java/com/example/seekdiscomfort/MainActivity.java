@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button logout_button, seekers_essential, jewelry, contact, orders, promocode;
+    Button logout_button, seekers_essential, jewelry, contact, orders, promocode, search;
     FirebaseAuth mAuth;
 
     @Override
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         contact = findViewById(R.id.contact_us_button);
         orders = findViewById(R.id.order_page_button);
         promocode = findViewById(R.id.promo_code_button);
+        search = findViewById(R.id.search_btn);
 
         logout_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +71,13 @@ public class MainActivity extends AppCompatActivity {
         orders.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+            }
+        });
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SearchActivity.class));
             }
         });
     }

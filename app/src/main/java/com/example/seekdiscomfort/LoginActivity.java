@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +21,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -30,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     ProgressDialog loadingbar;
     int count;
+    CheckBox remember;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,16 @@ public class LoginActivity extends AppCompatActivity {
         loadingbar = new ProgressDialog(this);
         count = 0;
         admin_link = findViewById(R.id.hudatext);
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+
+        if (currentUser != null)
+        {
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        }
+
+        remember = findViewById(R.id.rememberme);
+
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override

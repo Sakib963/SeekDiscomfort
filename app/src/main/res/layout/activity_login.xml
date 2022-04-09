@@ -54,10 +54,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/password_text_login"
         android:layout_marginLeft="15dp"
-        android:text="Remember Me"
-        android:textColor="@color/white"
         android:buttonTint="@color/white"
-        ></CheckBox>
+        android:text="Remember Me"
+        android:textColor="@color/white"></CheckBox>
 
 
     <Button
